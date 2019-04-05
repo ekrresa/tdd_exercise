@@ -1,2 +1,5 @@
-# tdd_exercise
-Learning TDD
+# Learning TDD
+
+## Exercises
+
+- Add two numbers
