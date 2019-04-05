@@ -13,5 +13,7 @@ describe("String Concatenation", function() {
   });
   test("should throw exception if other data types are passed in", function() {
     expect(() => joinStrings({ ted: 2 })).toThrow("only strings are valid");
+    expect(() => joinStrings(234, true)).toThrow("only strings are valid");
+    expect(() => joinStrings({ ted: 2 }, null)).toThrow("only strings are valid");
   });
 });
