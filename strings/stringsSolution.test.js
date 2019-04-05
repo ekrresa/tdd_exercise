@@ -7,4 +7,7 @@ describe("String Concatenation", function() {
   test("should throw exception if no argument is passed", function() {
     expect(() => joinStrings()).toThrow("only strings are valid and required");
   });
+  test("should return string if only one string is passed in", function() {
+    expect(joinStrings("song")).toBe("song");
+  });
 });
