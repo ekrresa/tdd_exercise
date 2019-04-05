@@ -1,5 +1,13 @@
-var add = function (a,b) {
-  return +a + +b;
-}
+var add = function(a, b) {
+  var sum = +a + +b;
+  if (sum === undefined) {
+    throw new Error("numbers are required");
+  }
+  if (isNaN(sum)) {
+    throw new Error("only numbers are valid");
+  }
 
-module.exports = add
+  return +sum.toFixed(1);
+};
+
+module.exports = add;
