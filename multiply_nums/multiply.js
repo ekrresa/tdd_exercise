@@ -7,10 +7,10 @@ var multiply = function() {
   var attempt = false;
 
   for (var i = 0; i < argsArray.length; i++) {
-    attempt = true;
     if (!isNaN(+argsArray[i])) {
       if (typeof argsArray[i] !== "boolean") {
         total *= +argsArray[i];
+        attempt = true;
       }
     }
   }
