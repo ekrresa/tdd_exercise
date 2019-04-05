@@ -15,7 +15,7 @@ describe("Multiply multiple Numbers", function() {
   });
   test("should multiply only numbers if arguments contain other types", function() {
     expect(multiply(12, -5, -6, "name", { ted: 2 }, 21, false)).toBe(7560);
-    expect(multiply("game", { ted: 2 }, false, true)).toBe(1);
+    expect(multiply("game", { ted: 2 }, false, true)).toBe(0);
   });
   test("should throw exception when arguments are not numbers or argument is undefined", function() {
     expect(() => multiply()).toThrowError("only numbers are valid and are required");
