@@ -9,5 +9,9 @@ describe("String Concatenation", function() {
   });
   test("should return string if only one string is passed in", function() {
     expect(joinStrings("song")).toBe("song");
+    expect(joinStrings("james", false)).toBe("james");
+  });
+  test("should throw exception if other data types are passed in", function() {
+    expect(() => joinStrings({ ted: 2 })).toThrow("only strings are valid");
   });
 });
