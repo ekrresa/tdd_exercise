@@ -34,6 +34,6 @@ describe("Add Two Numbers", function() {
   });
 
   test("should add 0.1 and 0.2", function() {
-    expect(add(0.1, 0.2)).toBe(0.3);
+    expect(add(0.1, 0.2)).toBeCloseTo(0.3);
   });
 });

@@ -7,7 +7,7 @@ var add = function(a, b) {
     throw new Error("only numbers are valid");
   }
 
-  return +sum.toFixed(1);
+  return +sum;
 };
 
 module.exports = add;
