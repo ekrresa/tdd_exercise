@@ -3,7 +3,11 @@ var add = function() {
   var total = 0;
 
   for (var i = 0; i < argsArray.length; i++) {
-    total += argsArray[i];
+    if (!isNaN(+argsArray[i])) {
+      if (typeof argsArray[i] !== "boolean") {
+        total += +argsArray[i];
+      }
+    }
   }
 
   return total;
