@@ -10,6 +10,9 @@ describe("Divide two numbers", function() {
   test("should throw error when denominator is zero", function() {
     expect(() => divide(5, 0)).toThrow("Error. Division by zero is not allowed");
   });
+  test("should throw error when denominator is null", function() {
+    expect(() => divide(true, null)).toThrow("Error. Division by null is not allowed");
+  });
   test("should divide two negative numbers", function() {
     expect(divide(-3, -7)).toBeCloseTo(0.429);
   });
