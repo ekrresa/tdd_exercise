@@ -27,7 +27,7 @@ describe("Add Two Numbers", function() {
 
   test("should throw exception when arguments are not numbers or argument is undefined", function() {
     expect(() => add()).toThrowError("only numbers are valid");
-
+    expect(() => add("name", "addfae")).toThrowError("only numbers are valid");
     expect(() => {
       add("{lets}", true);
     }).toThrowError("only numbers are valid");
