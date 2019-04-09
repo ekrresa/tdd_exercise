@@ -10,3 +10,4 @@ This is to enable me learn TDD and incorporate it into my workflow.
 - Subtract two numbers
 - Multiply multiple numbers
 - String concatenation
+- Async Testing of Github API with fakes and mocks
